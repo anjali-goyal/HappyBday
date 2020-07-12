@@ -25,7 +25,7 @@
       width: 754px;
       height: 292px;
       margin: 115px auto 0;
-      margin-left: 100px;
+      /*margin-left: 100px;*/
     }
     .hi-slide .hi-next, .hi-slide .hi-prev{
       position: absolute;
