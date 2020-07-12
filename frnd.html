@@ -74,41 +74,93 @@ $(document).ready(function () {
 </section>
 
 
-<div class="slide hi-slide">
-    <div class="hi-prev"></div>
-    <div class="hi-next"></div>
-    <ul>
-      <li>
-        <img src="images/p.jpg">
-      </li>
-      <li>
-        <img src="images/pr3.jpeg">
-      </li>
-      <li>
-        <img src="images/f2.png">
-      </li>
-      <li>
-        <img src="images/pr5.jpeg">
-      </li>
-      <li>
-        <img src="images/f7.png">
-      </li>
-      <li>
-        <img src="images/f13.png">
-      </li>
-      <li>
-        <img src="images/f14.png">
-      </li>
-      
-      
-    </ul>
-  </div>
+<div class="slideshow-container">
 
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  <script src="jquery.hislide.js"></script>
-  <script >
-    $('.slide').hiSlide();
-  </script>
+<div class="mySlides fade">
+  <img src="images/f2.png"  style="width:80%">
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/f3.png" style="width:80%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="images/f13.png" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/f14.png" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/gg.jpg" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/pf1.jpg" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/pr3.jpeg" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/gg2.jpg" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/gg1.jpg" style="width:80%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="images/f16.png" style="width:80%">
+  
+</div>
+
+</div>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" actived", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " actived";
+  setTimeout(showSlides, 5000); 
+}
+</script>
 
 
 </body>
