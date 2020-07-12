@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday</title>
+	<link rel="stylesheet" type="text/css" href="style3.css">
+	<!--<script type="text/javascript" src="typewriter.js"></script>-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+    //you can set this, as long as it's not greater than the slides length
+    var show = 3;
+    var w = $('#slider').width() / show;
+    var l = $('.slide').length;
+    
+    $('.slide').width(w);
+    $('#slide-container').width(w * l)
+    
+    function slider() {
+        $('.slide:first-child').animate({
+            marginLeft: -w
+        }, 'slow', function () {
+            $(this).appendTo($(this).parent()).css({marginLeft: 0});
+        });
+    }
+    var timer = setInterval(slider, 2000);
+    
+    $('#slider').hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(slider, 2000);
+    });
+});
+</script>
+</head>
+  <body>
+  	<header>
+    <div  >
+      <h1 id="happy">Happy Birthday</h1> 
+    <div id="container"><b>
+	<div id="text"></div><div id="cursor"></div></b>
+</div>
+    </div>
+</header>
+<div>
+    <img src="images/ani1.jpg" id="first"/>
+    <p style="letter-spacing: 2px;margin-top: 15px; font-size: 17px; text-align: justify;margin-left: 10px; "><i>Happy Birthday to the person who taught me to live life in a different way. Happy Birthday to the person who never judged me for who i am. Happy Birthday to the person who have shown me a different side of love. A very happy birthday to the person i love and the person who loves me.<br><br> Here, in this page you may know something you never knew. I have just noted down all of my feelings for you. You might know some things, but there are some things noone knows.<br><br>Ohh! you may find me cheesy while reading this, but that's what i really felt and always feel. That may be because i sometimes feel too much but yeah that's how i am. So, do you wanna read that, ohh you'll have to my dear bunny.</i></p>
+    </div>
+    <div align="center">
+    <video controls loop id="video">
+    	<source src="video.mp4" type="">
+    </video>
+    </div>
+    <div>
+    	<p class="para">
+    		Do you believe in love at first sight? Someone asked<br><br>
+What bullshit! How can someone fall for a person by just a sight of him/her. I replied arrogantly<br><br>
+Yes, it was my perspective. But destiny always takes you to the place you have never expected. Yes, I met you, and I literally fell for you at the first sight itself. We didn’t talk at all, we didn’t meet purposely, so, how did I fall for you right.. it was your smile, your innocent and sweet smile, that took my heart away and there starts a battle between my heart and my mind. “Are you mad? How can you fall for someone you don’t even know, it’s just an attraction.” My mind said. “No, it’s not just attraction it’s something else”, my heart replied. “Don’t get diverted it’s nothing else, you are just thinking too much”. “it’s your duty to think, I just feel whatever happens around” and this continued for approx 2 to 3 months. I almost made myself understand that nothing can be done, my mind won the battle and forced me to go into the flashback, think about the consequences and ignore whatever my heart says. It’s not like we never talked to each other, we used to talk but only when we had some work from each other, days and months passed like this. 
+</p>
+    </div>
+    <div id="slider">
+    <div id="slide-container">
+        <div class="slide"><img src="images/ani7.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani2.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani5.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani3.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani6.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani8.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani9.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani10.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani11.jpg" class="image1"></div>
+        <div class="slide"><img src="images/ani12.jpg" class="image1"></div>
+    </div>
+</div>
+
+<div>
+	<p class="para">
+		Remember the day I noticed your whatsapp status “no girl can write anything for a boy”, I don’t know why but this offended me for a while, and I also replied on that status, I don’t know why but I did, “no, you are wrong, a girl can write a book on someone she knows well” and then you asked me write something for you right there and I wrote too, but it was not that easy, it again gave rise to a battle between mind and heart. “what if I wrote something I am not supposed to”, “that’s fine, write whatever you feel like, put your heart into it”, “no, not at all I can’t do this, what will he think about me if I did this”, and then too my mind won the battle again, and I just talked about your smile, but for me all my feelings were there in the message itself, and thanks to that status because if you remember, from then we talked to each other continuously, every day, every now and then. It was the time of end term examination for third year odd semester, and you asked for a meeting, with those meetings you were  giving rise to more and more desires, and at this moment my desires were at the peak and on the day of last exam, I was not at all willing to leave, you remember right, I sat in bus outside the college. After that I waited to get a single reply from you for so long, unaware of the fact that you didn’t have any data pack in your phone<br><br>
+		It was 25th December, Christmas day, I wanted to wish you merry Christmas, I thought of calling you to wish but yes my mind didn’t allow me to do so, as you know I was thinking that someone else might have your phone that time and yes I texted to just check that, I had no idea that you would call me to reply. I was really shocked, and those few seconds gave me enough of happiness. 		
+	</p>
+</div>
+<section class="slideshow">
+    <div class="content">
+      <div class="content-carrousel">
+        <figure class="shadow"><img src="images/anir1.jpg"></figure>
+        <figure class="shadow"><img src="images/anir2.jpg"></figure>
+        <figure class="shadow"><img src="images/anir3.jpg"></figure>
+        <figure class="shadow"><img src="images/anir4.jpg"></figure>
+        <figure class="shadow"><img src="images/anir5.jpg"></figure>
+        <figure class="shadow"><img src="images/anir6.jpg"></figure>
+        <figure class="shadow"><img src="images/anir7.jpg"></figure>
+        <figure class="shadow"><img src="images/anir8.jpg"></figure>
+        <figure class="shadow"><img src="images/anir9.jpg"></figure>
+      </div>
+    </div>
+  </section>
+  <div>
+	<p class="para">
+		And on the new year’s night, I didn’t sleep, I was waiting for your reply the whole night. I never told you this, but yes it’s true, with each and every notification I just hoped for your reply. The next day, when I called you back, it was the first time I took risk for someone. Mummy was constantly calling my name, papa and bhaiya were there in the next room, and I just called you without any worries. And one more thing, when you reached hostel and texted me, and got reply within seconds, you asked me “mere online aane ka hi wait kr rhi thi kya”, haan that was true, us time nhi btaya thik hai, pr m phone hi isiliye lekr bethi thi sath m. <br><br>
+		Yes, knowingly or unknowingly you have always given me a lot of happiness, I smile a little extra with you. I know I commit a lot of mistakes, I argue a lot, I fight a lot, but I usually don’t fight with the ones I don’t care about. 		
+	</p>
+</div>
+<h2 style="text-align: center; color: skyblue;">Lots and lots of love to you!!</h2>
+    <script type="text/javascript">
+    var _CONTENT = [ 
+	"Rahul", 
+	"Golu", 
+	"Bunny", 
+	"Rolu Polu",
+	"Cookie",
+	"Dairy Milk",
+	"Guggu",
+	"Shinchan",
+	"Tuddu",
+	"Jerry",
+	"Goma",
+	"Mocha",
+	"Golgappa",
+	"Babby boo dubie dubie doo"
+];
+
+// Current sentence being processed
+var _PART = 0;
+
+// Character number of the current sentence being processed 
+var _PART_INDEX = 0;
+
+// Holds the handle returned from setInterval
+var _INTERVAL_VAL;
+
+// Element that holds the text
+var _ELEMENT = document.querySelector("#text");
+
+// Cursor element 
+var _CURSOR = document.querySelector("#cursor");
+
+// Implements typing effect
+function Type() { 
+	// Get substring with 1 characater added
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX++;
+
+	// If full sentence has been displayed then start to delete the sentence after some time
+	if(text === _CONTENT[_PART]) {
+		// Hide the cursor
+		_CURSOR.style.display = 'none';
+
+		clearInterval(_INTERVAL_VAL);
+		setTimeout(function() {
+			_INTERVAL_VAL = setInterval(Delete, 50);
+		}, 1000);
+	}
+}
+
+// Implements deleting effect
+function Delete() {
+	// Get substring with 1 characater deleted
+	var text =  _CONTENT[_PART].substring(0, _PART_INDEX - 1);
+	_ELEMENT.innerHTML = text;
+	_PART_INDEX--;
+
+	// If sentence has been deleted then start to display the next sentence
+	if(text === '') {
+		clearInterval(_INTERVAL_VAL);
+
+		// If current sentence was last then display the first one, else move to the next
+		if(_PART == (_CONTENT.length - 1))
+			_PART = 0;
+		else
+			_PART++;
+		
+		_PART_INDEX = 0;
+
+		// Start to display the next sentence after some time
+		setTimeout(function() {
+			_CURSOR.style.display = 'inline-block';
+			_INTERVAL_VAL = setInterval(Type, 100);
+		}, 200);
+	}
+}
+
+// Start the typing effect on load
+_INTERVAL_VAL = setInterval(Type, 100);
+</script>
+  </body>
+</html>

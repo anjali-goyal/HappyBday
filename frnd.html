@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Birthday</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="style3.css"> -->
+	<link rel="stylesheet" type="text/css" href="style4.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+$(document).ready(function () {
+    //you can set this, as long as it's not greater than the slides length
+    var show = 3;
+    var w = $('#slider').width() / show;
+    var l = $('.slide').length;
+    
+    $('.slide').width(w);
+    $('#slide-container').width(w * l)
+    
+    function slider() {
+        $('.slide:first-child').animate({
+            marginLeft: -w
+        }, 'slow', function () {
+            $(this).appendTo($(this).parent()).css({marginLeft: 0});
+        });
+    }
+    var timer = setInterval(slider, 2000);
+    
+    $('#slider').hover(function(){
+        clearInterval(timer);
+    },function(){
+        timer = setInterval(slider, 2000);
+    });
+});
+</script>
+</head>
+<body>
+  <div id="slider">
+    <div id="slide-container">
+        <div class="slide"><img src="images/g1.jpeg" class="image1"></div>
+        <div class="slide"><img src="images/g2.jpeg" class="image1"></div>
+        <div class="slide"><img src="images/g3.jpg" class="image1"></div>
+        <div class="slide"><img src="images/g4.jpg" class="image1"></div>
+        <div class="slide"><img src="images/f4.png" class="image1"></div>
+        <div class="slide"><img src="images/f5.png" class="image1"></div>
+        <div class="slide"><img src="images/f6.png" class="image1"></div>
+        <div class="slide"><img src="images/f8.png" class="image1"></div>
+        <div class="slide"><img src="images/f9.png" class="image1"></div>
+        <div class="slide"><img src="images/f10.png" class="image1"></div>
+        <div class="slide"><img src="images/f11a.png" class="image1"></div>
+        <div class="slide"><img src="images/f15.png" class="image1"></div>
+        <div class="slide"><img src="images/f12.png" class="image1"></div>
+        <div class="slide"><img src="images/f11b.png" class="image1"></div>
+    </div>
+</div>
+<section>
+  <img src="images/pr1.jpeg" style="width: 12%;float: right; margin-top: 10px;margin-right: 25px;">
+  <p style="font-size: 20px;margin-left: 10px;">हर लम्हा आपके होठों पर मुस्कान रहे!!<br>
+हर गम से आप हमेशा अनजान रहे!!<br>
+जिसके साथ महक उठे आपकी ज़िंदगी!!<br>
+हमेशा आपके पास वो इंसान रहे!!<br>
+हमारे लिए खास है आज का दिन!!<br>
+जो नहीं बिताना चाहते आपके बिन!!<br>
+वैसे तो हर दुआ आपके लिए माँगते है!!<br>
+फिर भी कहते है खूब सारी खुशियाँ मिले!!</p>
+</section>
+<section style="margin-top: 10px;">
+  <img src="images/pr2.jpeg" style="width: 12%;float: left; margin-top: 5px;margin-right: 25px;">
+  <p style="font-size: 20px;margin-left: 10px; text-align: right; margin-top: 20px; ">आपको इस जन्मदिन!<br>
+हमारी एक प्यारी-सी दुआ है!!<br>
+
+आपकी हर दुआ पूरी हो!!<br>
+
+जो प्यारी चाहते होती है सपनो में!!<br>
+
+वो सारी चाहते आपकी पूरी हो!!<br></p>
+</section>
+
+<div class="slide hi-slide">
+    <div class="hi-prev"></div>
+    <div class="hi-next"></div>
+    <ul>
+      <li>
+        <img src="images/p.jpg">
+      </li>
+      <li>
+        <img src="images/pr3.jpeg">
+      </li>
+      <li>
+        <img src="images/f2.png">
+      </li>
+      <li>
+        <img src="images/pr5.jpeg">
+      </li>
+      <li>
+        <img src="images/f7.png">
+      </li>
+      <li>
+        <img src="images/f13.png">
+      </li>
+      <li>
+        <img src="images/f14.png">
+      </li>
+      
+      
+    </ul>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="jquery.hislide.js"></script>
+  <script >
+    $('.slide').hiSlide();
+  </script>
+
+
+</body>
+</html>
