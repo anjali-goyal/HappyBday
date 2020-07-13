@@ -6,6 +6,14 @@ body{
 	background: url(images/img3.jpg) no-repeat;
 	background-size: cover;
 }
+@media only screen and (max-width: 720px) {
+  body {
+    /* The file size of this background image is 93% smaller
+     * to improve page load speed on mobile internet connections */
+    background-image: url(images/img3.jpg) no-repeat;
+
+  }
+	}
 .login-box{
 	width: 280px;
 	position: absolute;
